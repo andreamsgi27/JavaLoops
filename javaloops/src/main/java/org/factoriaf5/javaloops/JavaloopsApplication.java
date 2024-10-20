@@ -14,14 +14,14 @@ public class JavaloopsApplication {
 				int[] multiplicadores = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 				System.out.println("Escribe un número: ");
 				int num = scanner.nextInt();
-				tabla(num, multiplicadores);
+				System.out.println(tabla(num, multiplicadores));
 				scanner.close();
 			}
 
 			public static String tabla (int num, int[]multiplicadores){
 				String tabla = "";
 				for (int i = 0;  i < multiplicadores.length; i++) {
-					tabla += num + " x " + i + " = "  + num * multiplicadores[i] + "\n";
+					tabla += num + " x " + i + " = " + num * multiplicadores[i] + "\n";
 			}
 			return tabla;
 		}
